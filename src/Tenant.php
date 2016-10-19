@@ -31,7 +31,7 @@ class Tenant
     {
         $result = DB::select('select value, is_encrypted, is_env from tenant where name = ?', [$key]);
 
-        if (null == $result) return $default;
+        if (null == $result || null == $result->value) return $default;
 
         if ($result[0]->is_encrypted && null !== $result[0]->value) {
             return decrypt($result[0]->value);
