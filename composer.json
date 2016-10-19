@@ -1,0 +1,27 @@
+{
+  "name": "karlmonson/tenant",
+  "description": "Tenant allows for storing configuration settings in the database. This package is perfect for multitenant applications.",
+  "keywords": ["laravel", "database", "settings"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Karl Monson",
+      "email": "karl@karlmonson.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/database": "~5.3",
+    "illuminate/support": "~5.3",
+  },
+  "autoload": {
+    "classmap": [
+      "src/database/seeds"
+    ],
+    "psr-4": {
+      "Karlmonson\\Tenant\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
