@@ -2,10 +2,6 @@
 
 Tenant allows for storing configuration settings in the database. This package is perfect for multitenant applications.
 
-## Status
-
-This package is a work-in-progress and is not yet recommended for production use.
-
 ## Installation
 
 Install via Composer:
