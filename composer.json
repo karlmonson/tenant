@@ -11,8 +11,8 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/database": "~5.3",
-    "illuminate/support": "~5.3"
+    "illuminate/database": "^5.3 || ^5.7 || ^5.8 || ^6.0",
+    "illuminate/support": "^5.3 || ^5.7 || ^5.8 || ^6.0"
   },
   "autoload": {
     "classmap": [
@@ -23,5 +23,15 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Karlmonson\\Tenant\\TenantServiceProvider"
+      ],
+      "aliases": {
+        "Tenant": "Karlmonson\\Tenant\\Facades\\Tenant"
+      }
+    }
+  }
 }
